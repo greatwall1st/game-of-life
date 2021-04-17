@@ -10,7 +10,7 @@
 		stage('Stage 1') {
 			steps {
 				script {
-					echo 'echo Stage 111'
+					echo "Running stage 1 from ${env.NODE_NAME}"
 				}
 			}
 		}
