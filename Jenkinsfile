@@ -10,7 +10,7 @@
 		stage('Stage 1') {
 			steps {
 				script {
-					echo "Running stage 1 from ${env.NODE_NAME}"
+					echo "Running stage 1 from ${env.NODE_NAME} on on ${env.JENKINS_URL}"
 				}
 			}
 		}
