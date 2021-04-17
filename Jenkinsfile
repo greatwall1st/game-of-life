@@ -17,7 +17,7 @@
 		stage('Stage 2') {
 			steps {
 				script {
-					echo 'echo Stage 222'
+					echo 'echo Stage 2'
 				}
 			}
 		}
