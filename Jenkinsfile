@@ -7,17 +7,18 @@
 	  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '7', numToKeepStr: '10')
 	}
 	stages {
-	stage('Stage 1') {
-		steps {
-			script {
-				echo 'echo Stage 11'
+		stage('Stage 1') {
+			steps {
+				script {
+					echo 'echo Stage 11'
+				}
 			}
 		}
-	}
-	stage('Stage 2') {
-		steps {
-			script {
-				echo 'echo Stage 22'
+		stage('Stage 2') {
+			steps {
+				script {
+					echo 'echo Stage 22'
+				}
 			}
 		}
 	}
