@@ -4,7 +4,7 @@
 		pollSCM ignorePostCommitHooks: true, scmpoll_spec: 'H/1 * * * *'
 	}
 	options {
-	  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '7', numToKeepStr: '10')
+		buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '7', numToKeepStr: '10')
 	}
 	stages {
 		stage('Stage 1') {
