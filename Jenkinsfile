@@ -1,5 +1,8 @@
  pipeline {
   agent any
+  triggers {
+    pollSCM ignorePostCommitHooks: true, scmpoll_spec: 'H/5 * * * *'
+  }
   stages {
   stage('Stage 1') {
       steps {
