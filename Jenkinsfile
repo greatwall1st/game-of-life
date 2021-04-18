@@ -1,7 +1,7 @@
  pipeline {
 	agent any
 	triggers {
-		pollSCM ignorePostCommitHooks: true, scmpoll_spec: 'H/2 * * * *'
+		pollSCM ignorePostCommitHooks: true, scmpoll_spec: 'H/5 * * * *'
 	}
 	options {
 		buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '7', numToKeepStr: '10')
